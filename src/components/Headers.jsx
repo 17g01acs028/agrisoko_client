@@ -7,6 +7,7 @@ import { AiOutlineTwitter, AiFillGithub, AiFillHeart, AiFillShopping } from 'rea
 import { Link, useLocation, useNavigate } from 'react-router-dom'
 import { useSelector, useDispatch } from 'react-redux'
 import { get_card_products, get_wishlist_products } from '../store/reducers/cardReducer'
+import logo from '../images/logo.png'
 
 const Headers = () => {
 
@@ -147,7 +148,7 @@ const Headers = () => {
                 <div className={`w-[300px] z-[9999] transition-all duration-200 fixed  ${showShidebar ? '-left-[300px]' : 'left-0'} top-0 overflow-y-auto bg-white h-screen py-6 px-8`}>
                     <div className='flex justify-start flex-col gap-6'>
                         <Link to='/'>
-                            <img src="http://localhost:3000/images/logo.png" alt="logo" />
+                            <img src={logo} alt="logo" />
                         </Link>
                         <div className='flex justify-star items-center gap-10'>
                             {/* <div className='flex group cursor-pointer text-slate-800 text-sm justify-center items-center gap-1 relative after:h-[18px] after:w-[1px] after:bg-[#afafaf] after:-right-[16px] after:absolute'>
