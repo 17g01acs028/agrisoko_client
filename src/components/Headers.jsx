@@ -89,7 +89,7 @@ const Headers = () => {
                             <div className='flex justify-between items-center'>
 
                                 <Link to='/' className='max-h-5'>
-                                    <img src="http://localhost:3000/images/logo.png" className="h-20 mt-[-25px] transition-transform duration-300 ease-in-out xl:-translate-x-5lg:h-10 xl:h-20" alt="logo" />
+                                    <img src={logo} className="h-20 mt-[-25px] transition-transform duration-300 ease-in-out xl:-translate-x-5lg:h-10 xl:h-20" alt="logo" />
                                 </Link>
                                 <div className='justify-center items-center w-[30px] h-[30px] bg-white text-slate-600 border border-slate-600 rounded-sm cursor-pointer lg:hidden md-lg:flex xl:hidden hidden' onClick={() => setShowShidebar(false)}>
                                     <span><FaList /></span>
